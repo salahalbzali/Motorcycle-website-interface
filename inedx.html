@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle website inetface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="logo.png" class="logo">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h2>THE YAMAHA</h2>
+            <h1>M 1450 S</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In a 
+                placeat dolorem tempore hic ipsam neque adipisci enim ad minima?</p>
+                <h3>Choose your colour</h3>
+            <div class="colour-select">
+                <div id="red"></div>
+                <div id="yellow"></div>
+                <div id="white"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let redBtn = document.getElementById("red");
+        let yellowBtn = document.getElementById("yellow");
+        let whiteBtn = document.getElementById("white");
+        let bike = document.getElementById("bike");
+
+        redBtn.onclick = function(){
+            bike.style.backgroundImage = "url(bg1.jpg)"
+        }
+        yellowBtn.onclick = function(){
+            bike.style.backgroundImage = "url(bg2.jpg)"
+        }
+        whiteBtn.onclick = function(){
+            bike.style.backgroundImage = "url(bg3.jpg)"
+        }
+    </script>
+</body>
+</html>
